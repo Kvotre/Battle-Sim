@@ -93,24 +93,27 @@ export class CharactersLogicComponent implements OnInit {
   }
 
   playerOneAttack(): void {
+    setTimeout(() => {
       this.count++;
-      this.playerOne()
+    this.playerOne()
     if (this.characterTwoHealth <= 0) {
       this.over = true;
-    }  
+    }
+  }, 500);
 }
 
-  playerTwoAttack(): void { 
-      this.count++;
-      this.playerTwo()
+playerTwoAttack(): void {
+    setTimeout(() => {
+    this.count++;
+    this.playerTwo()
     if (this.characterOneHealth <= 0) {
        this.over = true;
-  }
-} 
+    }
+  }, 500);
+}
 
    attack() {
     this.game.gameStart();
-    console.log(this.game.currentTurn);
     const currentPlayer = `Player: ${this.game.currentTurn} attacks`;
     this.playerTurn = currentPlayer;
 
