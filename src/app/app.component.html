@@ -1,0 +1,9 @@
+<div class="main-container">
+    <h1 class="mat-display-2">
+        Duel Game
+    </h1>
+   <div class="button-container">
+       <button class="start-btn" routerLink="/character" mat-raised-button *ngIf="this.hide" (click)="this.hide = false">Start Game</button>
+   </div> 
+</div>   
+<router-outlet></router-outlet>

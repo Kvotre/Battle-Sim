@@ -1,0 +1,26 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    h1 {
+      color: wheat;
+    }
+  }
+  
+  .button-container {
+    margin-top: 95px;
+  
+    .start-btn {
+      background-color: yellow;
+      margin-left: -10rem;
+    }
+  }
+
+  .turn {
+    display: flex;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }

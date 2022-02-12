@@ -1,0 +1,49 @@
+<div [class.ghost]="over" class="count-container">
+    <h1 class="player-turn">{{playerTurn}}</h1>
+    <h1 class="round-count">Round: {{count}}</h1>    
+</div>
+
+<div [class.ghost]="over" class="container">
+    <div class="player-1">
+        <h2 class="first-character">Character 1</h2>
+        <h2 class="player-one-ability">{{getFirstPlayerAbility}}</h2>
+        <h3 class="char-1-life">Character 1 remaining life: {{characterOneHealth}}</h3>
+        <h3 class="char-one-power">Character power: {{firstCharacterAttack}}</h3>
+        
+    </div>
+    <button class="attack-btn" mat-raised-button (click)="attack()">Attack</button>
+    <div class="player-2">
+        <h2 class="second-character">Character 2</h2>
+        <h2 class="player-two-ability">{{getSecondPlayerAbility}}</h2>
+        <h3 class="char-2-life">Character 2 remaining life: {{characterTwoHealth}}</h3>
+        <h3 class="char-two-power">Character power: {{secondCharacterAttack}}</h3>
+    </div>
+</div>
+
+<h2 class="game-end">{{winner}}</h2>
+
+<div [class.ghost]="!over" class="reset-btn">
+    <button mat-stroked-button color="warn" (click)="reset()">New Game</button>
+ </div>
+
+ 
+
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
