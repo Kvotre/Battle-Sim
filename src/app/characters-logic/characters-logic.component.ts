@@ -34,7 +34,7 @@ export class CharactersLogicComponent implements OnInit {
   playerOne() {
     let abilityActivation = Math.floor(Math.random() * 100) + 1;
     
-    if (abilityActivation < 76) {
+    if (abilityActivation < 75) {
       const basicDamage = this.game.randomAttack() - this.game.randomDefense();
       this.firstCharacterAttack = basicDamage;
       this.characterTwoHealth -= basicDamage;
@@ -64,7 +64,7 @@ export class CharactersLogicComponent implements OnInit {
   playerTwo() {
     let abilityActivation = Math.floor(Math.random() * 100) + 1;
     
-    if (abilityActivation < 76) {
+    if (abilityActivation < 75) {
       const basicDamage = this.game.randomAttack() - this.game.randomDefense();
       this.secondCharacterAttack = basicDamage; 
       this.characterOneHealth -= basicDamage;
@@ -131,5 +131,3 @@ playerTwoAttack(): void {
   }
 }
 
-
-  
